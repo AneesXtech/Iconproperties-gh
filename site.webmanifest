@@ -1,0 +1,21 @@
+{
+  "name": "ICON Estate & Property Managers",
+  "short_name": "ICON Properties",
+  "description": "Trusted real estate development, property sales and rental managers in Ghana.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1F3C07",
+  "theme_color": "#FD6F00",
+  "icons": [
+    {
+      "src": "images/Fave-icon-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/Fave-icon-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

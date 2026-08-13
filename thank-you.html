@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | ICON Estate & Property Managers Ghana</title>
+    <meta name="description" content="Thank you for reaching out to ICON Estate & Property Managers. Our team will contact you shortly.">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://IconpropertiesGh.com/thank-you.html">
+
+    <!-- Robots Directive -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Favicon & Web Manifest -->
+    <link rel="icon" type="image/png" href="images/Fave-icon-logo.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#fd6f00">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --orange: #fd6f00;
+            --green: #1f3c07;
+            --white: #ffffff;
+            --bg: #f7f8f5;
+            --text: #1a1a1a;
+            --muted: #6b7280;
+            --font-head: 'Plus Jakarta Sans', sans-serif;
+            --font-body: 'Poppins', sans-serif;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* HEADER */
+        .ty-header {
+            background: var(--white);
+            border-bottom: 1px solid rgba(31,60,7,0.1);
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ty-logo img {
+            height: 52px;
+            width: auto;
+            display: block;
+        }
+
+        /* MAIN */
+        .ty-main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 24px;
+        }
+
+        .ty-card {
+            background: var(--white);
+            border-radius: 28px;
+            padding: 64px 56px;
+            max-width: 680px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04), 0 16px 48px rgba(0,0,0,0.08);
+            animation: cardFadeUp 0.6s ease-out both;
+        }
+
+        @keyframes cardFadeUp {
+            from { opacity: 0; transform: translateY(32px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Icon */
+        .ty-icon-wrap {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(253,111,0,0.12), rgba(31,60,7,0.06));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 32px auto;
+            position: relative;
+            animation: iconPop 0.55s 0.25s cubic-bezier(0.34,1.56,0.64,1) both;
+        }
+
+        @keyframes iconPop {
+            from { opacity: 0; transform: scale(0.4); }
+            to   { opacity: 1; transform: scale(1); }
+        }
+
+        .ty-icon-wrap::before {
+            content: '';
+            position: absolute;
+            inset: -7px;
+            border-radius: 50%;
+            border: 2px solid rgba(253,111,0,0.3);
+            animation: ripple 2s ease-out 0.9s infinite;
+        }
+
+        @keyframes ripple {
+            0%   { opacity: 1; transform: scale(1); }
+            100% { opacity: 0; transform: scale(1.45); }
+        }
+
+        .ty-check-svg { color: var(--orange); }
+
+        /* Eyebrow */
+        .ty-eyebrow {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--orange);
+            background: rgba(253,111,0,0.10);
+            padding: 6px 18px;
+            border-radius: 999px;
+            margin-bottom: 20px;
+            animation: cardFadeUp 0.5s 0.4s ease-out both;
+        }
+
+        /* Heading */
+        .ty-heading {
+            font-family: var(--font-head);
+            font-size: clamp(2rem, 5vw, 2.9rem);
+            font-weight: 800;
+            color: var(--green);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin-bottom: 18px;
+            animation: cardFadeUp 0.5s 0.5s ease-out both;
+        }
+
+        .ty-heading span { color: var(--orange); }
+
+        /* Subtext */
+        .ty-subtext {
+            font-size: 16px;
+            color: var(--muted);
+            line-height: 1.75;
+            max-width: 480px;
+            margin: 0 auto 36px auto;
+            animation: cardFadeUp 0.5s 0.6s ease-out both;
+        }
+
+        .ty-subtext strong { color: var(--text); font-weight: 600; }
+
+        /* Info Pills */
+        .ty-info-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            animation: cardFadeUp 0.5s 0.7s ease-out both;
+        }
+
+        .ty-info-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--bg);
+            border: 1px solid rgba(31,60,7,0.12);
+            border-radius: 999px;
+            padding: 10px 18px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text);
+        }
+
+        .ty-info-pill svg { color: var(--orange); flex-shrink: 0; }
+
+        /* Divider */
+        .ty-divider {
+            border: none;
+            border-top: 1px solid rgba(31,60,7,0.08);
+            margin: 0 0 36px 0;
+            animation: cardFadeUp 0.5s 0.75s ease-out both;
+        }
+
+        /* Actions */
+        .ty-actions {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            animation: cardFadeUp 0.5s 0.8s ease-out both;
+        }
+
+        .ty-btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            background: var(--orange);
+            color: var(--white);
+            font-family: var(--font-body);
+            font-size: 15px;
+            font-weight: 600;
+            padding: 14px 30px;
+            border-radius: 999px;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 6px 20px rgba(253,111,0,0.35);
+        }
+
+        .ty-btn-primary:hover {
+            background: #e05e00;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(253,111,0,0.45);
+        }
+
+        .ty-btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            background: transparent;
+            color: var(--green);
+            font-family: var(--font-body);
+            font-size: 15px;
+            font-weight: 600;
+            padding: 13px 28px;
+            border-radius: 999px;
+            border: 2px solid rgba(31,60,7,0.22);
+            text-decoration: none;
+            transition: border-color 0.2s, background 0.2s, transform 0.2s;
+        }
+
+        .ty-btn-secondary:hover {
+            border-color: var(--green);
+            background: rgba(31,60,7,0.04);
+            transform: translateY(-2px);
+        }
+
+        /* FOOTER STRIP */
+        .ty-footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 13px;
+            color: var(--muted);
+            border-top: 1px solid rgba(31,60,7,0.08);
+        }
+
+        .ty-footer a {
+            color: var(--orange);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 600px) {
+            .ty-card {
+                padding: 44px 24px;
+                border-radius: 20px;
+            }
+
+            .ty-heading { font-size: 1.75rem; }
+
+            .ty-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .ty-btn-primary,
+            .ty-btn-secondary {
+                justify-content: center;
+                padding: 15px 20px;
+            }
+
+            .ty-info-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .ty-info-pill { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Minimal Header -->
+    <header class="ty-header">
+        <a href="index.html" class="ty-logo" aria-label="ICON Estate & Property Managers Home">
+            <img src="images/Property-Logo.png" alt="ICON Estate & Property Managers">
+        </a>
+    </header>
+
+    <!-- Thank You Content -->
+    <main class="ty-main">
+        <div class="ty-card">
+
+            <!-- Animated Check Icon -->
+            <div class="ty-icon-wrap" aria-hidden="true">
+                <svg class="ty-check-svg" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+            </div>
+
+            <!-- Eyebrow Label -->
+            <span class="ty-eyebrow">Inquiry Received</span>
+
+            <!-- Heading -->
+            <h1 class="ty-heading">Thank You for<br><span>Reaching Out!</span></h1>
+
+            <!-- Subtext -->
+            <p class="ty-subtext">
+                Your inquiry has been successfully submitted. A member of our team will review your message and respond within <strong>24 hours</strong>. We look forward to helping you find your perfect property.
+            </p>
+
+            <!-- Contact Info Pills -->
+            <div class="ty-info-row">
+                <div class="ty-info-pill">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    +233 244 450 088
+                </div>
+                <div class="ty-info-pill">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    info@iconpropertiesgh.com
+                </div>
+            </div>
+
+            <hr class="ty-divider">
+
+            <!-- CTA Buttons -->
+            <div class="ty-actions">
+                <a href="index.html" class="ty-btn-primary">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                    Back to Homepage
+                </a>
+                <a href="index.html#popular-properties" class="ty-btn-secondary">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                    Browse Properties
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Minimal Footer -->
+    <footer class="ty-footer">
+        <p>&copy; 2026 ICON Estate &amp; Property Managers &nbsp;&bull;&nbsp; <a href="index.html">Back to Homepage</a> &nbsp;&bull;&nbsp; <a href="contact.html">Contact Us</a></p>
+    </footer>
+
+</body>
+</html>

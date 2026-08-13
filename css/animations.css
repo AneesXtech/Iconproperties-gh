@@ -1,0 +1,135 @@
+/* ==========================================================================
+   ICON Estate & Property Managers - Master Animation & Motion System
+   ========================================================================== */
+
+/* 1. Viewport Scroll Entrance Reveals */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity var(--duration-entrance) var(--ease-luxury),
+                transform var(--duration-entrance) var(--ease-luxury);
+    will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered Children Animations */
+.reveal-stagger > *:nth-child(1) { transition-delay: 0.05s; }
+.reveal-stagger > *:nth-child(2) { transition-delay: 0.15s; }
+.reveal-stagger > *:nth-child(3) { transition-delay: 0.25s; }
+.reveal-stagger > *:nth-child(4) { transition-delay: 0.35s; }
+.reveal-stagger > *:nth-child(5) { transition-delay: 0.45s; }
+
+/* 2. Micro-Interactions & Hover Transforms */
+
+/* Buttons */
+.btn-animate {
+    transition: transform var(--duration-base) var(--ease-luxury),
+                box-shadow var(--duration-base) ease,
+                background-color var(--duration-fast) ease;
+}
+
+.btn-animate:hover {
+    transform: translateY(-2px);
+}
+
+.arrow-slide {
+    transition: transform var(--duration-base) var(--ease-luxury);
+}
+
+a:hover .arrow-slide,
+button:hover .arrow-slide {
+    transform: translateX(4px);
+}
+
+/* Cards & Container Elevators */
+.card-lift {
+    transition: transform var(--duration-base) var(--ease-luxury),
+                box-shadow var(--duration-base) var(--ease-luxury),
+                border-color var(--duration-fast) ease;
+}
+
+.card-lift:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-card-hover);
+}
+
+/* Image Scale Containers */
+.img-zoom-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.img-zoom-wrapper img {
+    transition: transform 0.5s var(--ease-luxury);
+}
+
+.img-zoom-wrapper:hover img {
+    transform: scale(1.03);
+}
+
+/* 3. Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(253, 111, 0, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 8px rgba(253, 111, 0, 0);
+    }
+}
+
+/* 4. Motion Control & Accessibility (prefers-reduced-motion) */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .reveal-on-scroll {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .btn:hover,
+    .card-container:hover,
+    .service-card:hover,
+    .property-exact-card:hover,
+    .ws-prop-card:hover,
+    .feature-card:hover {
+        transform: none !important;
+    }
+
+    .img-zoom-wrapper:hover img,
+    .ws-prop-img-wrap:hover img,
+    .img-hover-wrap:hover img {
+        transform: none !important;
+    }
+}

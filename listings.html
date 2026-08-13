@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties & Real Estate Portfolio | ICON Estate & Property Managers Ghana</title>
+    <meta name="description"
+        content="Ghana's Number one Real estate property managers And Developers! Discover featured residential and commercial real estate available for sale and rent across Ghana.">
+    <link rel="canonical" href="https://IconpropertiesGh.com/listings.html">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:site_name" content="ICON Properties Ghana">
+    <meta property="og:title" content="Properties | ICON Estate & Property Managers">
+    <meta property="og:description"
+        content="Discover prime residential and commercial real estate for sale and rent across Ghana.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://IconpropertiesGh.com/listings.html">
+
+    <!-- Google Fonts: Poppins (Body/Buttons), Plus Jakarta Sans & Caveat (Signature) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/Fave-icon-logo.png">
+</head>
+
+<body>
+
+    <!-- 1. HEADER SECTION -->
+    <header class="site-header" id="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand-logo" aria-label="ICON Estate & Property Managers Home">
+                <img src="images/Property-Logo.png" alt="ICON Estate & Property Managers Logo" class="header-logo-img">
+            </a>
+
+            <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="listings.html" class="nav-link active">Properties</a></li>
+                    <li><a href="we-build.html" class="nav-link">We Build</a></li>
+                    <li><a href="we-sell.html" class="nav-link">We Sell</a></li>
+                    <li><a href="we-rent.html" class="nav-link">We Rent</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="contact.html" class="btn btn-primary nav-cta">
+                    <span>Talk to an Expert</span>
+                    <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+
+                <button class="hamburger-toggle" id="hamburger-toggle" aria-expanded="false"
+                    aria-controls="mobile-nav-overlay" aria-label="Open Navigation Menu">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay" aria-hidden="true">
+        <div class="mobile-nav-content">
+            <div class="mobile-nav-header">
+                <a href="index.html" class="brand-logo">
+                    <img src="images/Property-Logo.png" alt="ICON Estate & Property Managers Logo" class="mobile-logo-img">
+                </a>
+                <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close Navigation Menu">&times;</button>
+            </div>
+            <nav class="mobile-nav-links">
+                <a href="index.html" class="mobile-link">Home</a>
+                <a href="about.html" class="mobile-link">About Us</a>
+                <a href="listings.html" class="mobile-link active">Properties</a>
+                <a href="we-build.html" class="mobile-link">We Build</a>
+                <a href="we-sell.html" class="mobile-link">We Sell</a>
+                <a href="we-rent.html" class="mobile-link">We Rent</a>
+                <a href="contact.html" class="mobile-link">Contact Us</a>
+            </nav>
+            <div class="mobile-nav-footer">
+                <a href="contact.html" class="btn btn-primary btn-full mobile-cta">
+                    <span>Talk to an Expert</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content">
+
+        <!-- 2. HERO SECTION (Identical to we-rent.html compact hero with background overlay) -->
+        <section class="about-hero-section" id="listings-hero">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1920&q=85"
+                alt="Properties and Real Estate Portfolio in Ghana" class="about-hero-bg-img">
+            <div class="about-hero-overlay"></div>
+
+            <div class="container about-hero-container text-center">
+                <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                    <a href="index.html" class="breadcrumb-link">Home</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-current">Properties</span>
+                </nav>
+
+                <h1 class="about-hero-title">Find Your Next Place.</h1>
+
+                <p class="about-hero-subtext max-w-650" style="margin: 0 auto;">
+                    Ghana's Number one Real estate property managers And Developers! Discover featured residential and commercial real estate available for sale and rent across Ghana.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. PROPERTIES SECTION WITH EXACT 3 TABS -->
+        <section class="ws-listings-section" id="listings-section" style="padding: 60px 0 100px 0;">
+            <div class="container">
+
+                <!-- Filter Tabs: All, For Sale, For Rent -->
+                <div class="listings-tabs-wrapper mb-40 text-center">
+                    <button class="listing-tab-btn active" data-filter="all">
+                        <span>All Properties</span>
+                    </button>
+                    <button class="listing-tab-btn" data-filter="for-sale">
+                        <span>For Sale</span>
+                    </button>
+                    <button class="listing-tab-btn" data-filter="for-rent">
+                        <span>For Rent</span>
+                    </button>
+                </div>
+
+                <!-- Property Grid Layout (Identical to we-rent.html ws-property-grid) -->
+                <div class="ws-property-grid listings-grid-container">
+
+                    <!-- CARD 01 — Labone 4-Bed Apartment [FOR SALE] -->
+                    <article class="ws-prop-card" data-category="for-sale" aria-label="Property listing">
+                        <div class="ws-prop-img-wrap">
+                            <img src="images/prop-labone-apt.jpg" alt="4-Bed Labone Apartment" class="ws-prop-img" loading="lazy">
+                            <span class="ws-prop-badge">FOR SALE</span>
+                        </div>
+                        <div class="ws-prop-body">
+                            <h3 class="ws-prop-title">4-Bed Labone Apartment</h3>
+                            <p class="ws-prop-location">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Labone, Accra
+                            </p>
+                            <p class="ws-prop-type">Prime Apartment — Master En-Suite</p>
+                            <div class="ws-prop-specs">
+                                <span class="ws-spec-item">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                    </svg>
+                                    4 Beds
+                                </span>
+                                <span class="ws-spec-item">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M5 12H19M5 12a2 2 0 0 1-2-2V6h18v4a2 2 0 0 1-2 2M5 12v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"></path>
+                                    </svg>
+                                    4 Baths
+                                </span>
+                            </div>
+                            <div class="ws-prop-footer">
+                                <span class="ws-prop-price">GH₵ 7,645,000</span>
+                                <a href="contact.html#inquiry-form" class="btn btn-primary ws-prop-cta">
+                                    <span>Enquire Now</span>
+                                    <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CARD 02 — East Legon 1-Bed Apartment [FOR RENT] -->
+                    <article class="ws-prop-card" data-category="for-rent" aria-label="Property listing">
+                        <div class="ws-prop-img-wrap">
+                            <img src="images/prop-rent-1bed.jpg" alt="Furnished 1-Bed Apartment" class="ws-prop-img" loading="lazy">
+                            <span class="ws-prop-badge badge-hot">FOR RENT</span>
+                        </div>
+                        <div class="ws-prop-body">
+                            <h3 class="ws-prop-title">Furnished 1-Bed Apartment</h3>
+                            <p class="ws-prop-location">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Legon Avenue, East Legon, Accra
+                            </p>
+                            <p class="ws-prop-type">Apartment — Fully Furnished, Move-in Ready</p>
+                            <div class="ws-prop-specs">
+                                <span class="ws-spec-item">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                    </svg>
+                                    1 Bed
+                                </span>
+                                <span class="ws-spec-item">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M5 12H19M5 12a2 2 0 0 1-2-2V6h18v4a2 2 0 0 1-2 2M5 12v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"></path>
+                                    </svg>
+                                    1 Bath
+                                </span>
+                            </div>
+                            <div class="ws-prop-footer">
+                                <span class="ws-prop-price">GH₵ 15,290 / Mo</span>
+                                <a href="contact.html#inquiry-form" class="btn btn-primary ws-prop-cta">
+                                    <span>Enquire Now</span>
+                                    <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CARD 03 — Oyarifa 2-Bed Apartment [FOR RENT] -->
+                    <article class="ws-prop-card" data-category="for-rent" aria-label="Property listing">
+                        <div class="ws-prop-img-wrap">
+                            <img src="images/prop-rent-2bed.jpg" alt="Furnished 2-Bed Apartment" class="ws-prop-img" loading="lazy">
+                            <span class="ws-prop-badge badge-hot">FOR RENT</span>
+                        </div>
+                        <div class="ws-prop-body">
+                            <h3 class="ws-prop-title">Furnished 2-Bed Apartment</h3>
+                            <p class="ws-prop-location">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Oyarifa, La-Nkwantanang, Accra
+                            </p>
+                            <p class="ws-prop-type">Gated Complex — Furnished</p>
+                            <div class="ws-prop-specs">
+                                <span class="ws-spec-item">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                    </svg>
+                                    2 Beds
+                                </span>
+                                <span class="ws-spec-item">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M5 12H19M5 12a2 2 0 0 1-2-2V6h18v4a2 2 0 0 1-2 2M5 12v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"></path>
+                                    </svg>
+                                    2 Baths
+                                </span>
+                            </div>
+                            <div class="ws-prop-footer">
+                                <span class="ws-prop-price">GH₵ 7,050 / Mo</span>
+                                <a href="contact.html#inquiry-form" class="btn btn-primary ws-prop-cta">
+                                    <span>Enquire Now</span>
+                                    <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CARD 04 — East Legon Executive Penthouse [FOR SALE] -->
+                    <article class="ws-prop-card" data-category="for-sale" aria-label="Property listing">
+                        <div class="ws-prop-img-wrap">
+                            <img src="images/prop-eastlegon-ph.jpg" alt="East Legon Executive Penthouse" class="ws-prop-img" loading="lazy">
+                            <span class="ws-prop-badge">FOR SALE</span>
+                        </div>
+                        <div class="ws-prop-body">
+                            <h3 class="ws-prop-title">East Legon Executive Penthouse</h3>
+                            <p class="ws-prop-location">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                East Legon, Accra
+                            </p>
+                            <p class="ws-prop-type">Luxury Penthouse — Private Pool</p>
+                            <div class="ws-prop-specs">
+                                <span class="ws-spec-item">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                    </svg>
+                                    5 Beds
+                                </span>
+                                <span class="ws-spec-item">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M5 12H19M5 12a2 2 0 0 1-2-2V6h18v4a2 2 0 0 1-2 2M5 12v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"></path>
+                                    </svg>
+                                    5 Baths
+                                </span>
+                            </div>
+                            <div class="ws-prop-footer">
+                                <span class="ws-prop-price">GH₵ 12,500,000</span>
+                                <a href="contact.html#inquiry-form" class="btn btn-primary ws-prop-cta">
+                                    <span>Enquire Now</span>
+                                    <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CARD 05 — Trasacco Valley Detached Villa [FOR SALE] -->
+                    <article class="ws-prop-card" data-category="for-sale" aria-label="Property listing">
+                        <div class="ws-prop-img-wrap">
+                            <img src="images/prop-trasacco-det.jpg" alt="Trasacco Valley Detached Villa" class="ws-prop-img" loading="lazy">
+                            <span class="ws-prop-badge">FOR SALE</span>
+                        </div>
+                        <div class="ws-prop-body">
+                            <h3 class="ws-prop-title">Trasacco Valley Detached Villa</h3>
+                            <p class="ws-prop-location">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Trasacco Valley, Accra
+                            </p>
+                            <p class="ws-prop-type">Gated Estate — Luxury Villa</p>
+                            <div class="ws-prop-specs">
+                                <span class="ws-spec-item">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                    </svg>
+                                    6 Beds
+                                </span>
+                                <span class="ws-spec-item">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M5 12H19M5 12a2 2 0 0 1-2-2V6h18v4a2 2 0 0 1-2 2M5 12v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"></path>
+                                    </svg>
+                                    6 Baths
+                                </span>
+                            </div>
+                            <div class="ws-prop-footer">
+                                <span class="ws-prop-price">GH₵ 18,200,000</span>
+                                <a href="contact.html#inquiry-form" class="btn btn-primary ws-prop-cta">
+                                    <span>Enquire Now</span>
+                                    <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CARD 06 — Akosombo Waterfront Villa [FOR SALE] -->
+                    <article class="ws-prop-card" data-category="for-sale" aria-label="Property listing">
+                        <div class="ws-prop-img-wrap">
+                            <img src="images/prop-akosombo-estate.jpg" alt="Akosombo Waterfront Villa" class="ws-prop-img" loading="lazy">
+                            <span class="ws-prop-badge">FOR SALE</span>
+                        </div>
+                        <div class="ws-prop-body">
+                            <h3 class="ws-prop-title">Akosombo Waterfront Villa</h3>
+                            <p class="ws-prop-location">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Lake Volta View, Akosombo
+                            </p>
+                            <p class="ws-prop-type">Resort Living — Lake View</p>
+                            <div class="ws-prop-specs">
+                                <span class="ws-spec-item">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                    </svg>
+                                    4 Beds
+                                </span>
+                                <span class="ws-spec-item">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M5 12H19M5 12a2 2 0 0 1-2-2V6h18v4a2 2 0 0 1-2 2M5 12v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"></path>
+                                    </svg>
+                                    4 Baths
+                                </span>
+                            </div>
+                            <div class="ws-prop-footer">
+                                <span class="ws-prop-price">GH₵ 4,500,000</span>
+                                <a href="contact.html#inquiry-form" class="btn btn-primary ws-prop-cta">
+                                    <span>Enquire Now</span>
+                                    <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 4. PERFECT FOOTER SECTION -->
+    <footer class="site-footer" id="site-footer">
+        <div class="container footer-main-container">
+            <div class="footer-main-grid">
+
+                <!-- COL 1: BRAND + LOGO + TAGLINE + DESC + SOCIAL -->
+                <div class="footer-brand-col">
+                    <a href="index.html" class="footer-brand-logo-link" aria-label="ICON Estate & Property Managers Home">
+                        <img src="images/Property-white-Logo.png" alt="ICON Estate Logo" class="footer-white-logo-img">
+                    </a>
+                    <p class="footer-tagline-text">Ghana's Number one Real estate property managers And Developers!</p>
+                    <p class="footer-brand-desc">ICON Estate & Property Managers helps clients navigate property development, sales, rentals and property management across Ghana.</p>
+
+                    <!-- Social Icons -->
+                    <div class="footer-social-links" aria-label="Social Media Links">
+                        <a href="#" class="social-icon-btn" aria-label="Facebook">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon-btn" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- COL 2: QUICK LINKS -->
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">Quick Links</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="listings.html">Properties</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- COL 3: SERVICES -->
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">Services</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="we-build.html">We Build</a></li>
+                        <li><a href="we-sell.html">We Sell</a></li>
+                        <li><a href="we-rent.html">We Rent</a></li>
+                    </ul>
+                </div>
+
+                <!-- COL 4: CONTACT US (Clean, no addresses inside column 4) -->
+                <div class="footer-contact-col">
+                    <h4 class="footer-col-title">Contact Us</h4>
+                    <div class="footer-contact-block">
+                        <span class="footer-contact-label">Email</span>
+                        <a href="mailto:info@iconpropertiesgh.com" class="footer-contact-val">info@iconpropertiesgh.com</a>
+                    </div>
+                    <div class="footer-contact-block">
+                        <span class="footer-contact-label">Head Admin</span>
+                        <a href="tel:+233244450088" class="footer-contact-val">+233 244 450 088</a>
+                    </div>
+                    <div class="footer-contact-block">
+                        <span class="footer-contact-label">General Manager</span>
+                        <a href="tel:+233256106373" class="footer-contact-val">+233 256 106 373</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- DEDICATED SEPARATE ADDRESS BAR BELOW GRID -->
+            <div class="footer-address-bar">
+                <div class="footer-addr-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    <span><strong>Takoradi Office:</strong> PT 52 West Anaji, Takoradi W/R, Ghana</span>
+                </div>
+                <div class="footer-addr-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    <span><strong>Amasaman Office:</strong> CK 234 Pobe Street, Reggi's Court Estate, Amasaman Satellite CW-4522-0250</span>
+                </div>
+            </div>
+
+            <!-- BOTTOM LEGAL BAR -->
+            <div class="footer-bottom-strip">
+                <p class="footer-copyright">&copy; 2026 ICON Estate & Property Managers. All rights reserved.</p>
+                <div class="footer-legal-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <span class="legal-divider">&bull;</span>
+                    <a href="terms-and-conditions.html">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

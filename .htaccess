@@ -1,0 +1,36 @@
+# ==========================================================================
+# ICON Properties Ghana - Production Server Security & Apache Configuration
+# Domain: https://IconpropertiesGh.com/
+# ==========================================================================
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # 1. Force HTTPS Redirection
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    
+    # 2. Canonical Domain Redirection (Non-www to www or vice versa, standardizing on domain)
+    # RewriteCond %{HTTP_HOST} !^IconpropertiesGh\.com$ [NC]
+    # RewriteRule ^(.*)$ https://IconpropertiesGh.com/$1 [L,R=301]
+</IfModule>
+
+<IfModule mod_headers.c>
+    # 3. HTTP Strict Transport Security (HSTS)
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    
+    # 4. Content Security Policy (CSP)
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https://images.unsplash.com https://*.unsplash.com; media-src 'self' https://www.archwestcapital.com; connect-src 'self'; frame-ancestors 'self';"
+    
+    # 5. Security & Privacy Headers
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+    Header always set Cross-Origin-Opener-Policy "same-origin"
+</IfModule>
+
+<IfModule mod_deflate.c>
+    # 6. Performance Gzip Compression
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json image/svg+xml
+</IfModule>

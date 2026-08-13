@@ -1,0 +1,149 @@
+/* ==========================================================================
+   ICON Estate & Property Managers - Responsive System Breakpoints
+   ========================================================================== */
+
+/* 1. Large Desktop Screens (>= 1440px) */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+/* 2. Standard Laptops & Desktops (1025px - 1439px) */
+@media (max-width: 1279px) {
+    .container {
+        padding: 0 28px;
+    }
+
+    h1 {
+        font-size: 56px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+}
+
+/* 3. Tablets & Small Laptops (768px - 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 24px;
+    }
+
+    .nav-menu {
+        display: none; /* Mobile Drawer Activated */
+    }
+
+    .hamburger-btn {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 46px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .ws-form-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+}
+
+/* 4. Mobile Landscape & Large Smartphones (481px - 767px) */
+@media (max-width: 767px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 38px;
+        line-height: 1.15;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 1.20;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .section-eyebrow {
+        font-size: 12px;
+    }
+
+    .ws-form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .header-actions .btn {
+        display: none; /* Kept in mobile drawer for space */
+    }
+}
+
+/* 5. Small Mobile Smartphones (<= 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .btn {
+        width: 100%; /* Mobile full-width buttons where applicable */
+        padding: 14px 20px;
+    }
+
+    .form-input,
+    .form-select,
+    .ws-field-input,
+    .ws-field-select {
+        height: 48px; /* Touch target safety */
+        font-size: 14px;
+    }
+
+    #back-to-top-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 42px;
+        height: 42px;
+    }
+
+    .ws-prop-specs {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+/* Prevent Horizontal Overflow Globally */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
