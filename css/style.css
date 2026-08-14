@@ -5251,4 +5251,182 @@ select.form-input {
     background: var(--color-orange, #fd6f00);
     color: #ffffff;
 }
+
+/* ==========================================================================
+   RENTAL MARKET INSIGHTS & ADVANCED SEARCH BAR
+   ========================================================================== */
+.rent-market-section {
+    padding: 60px 0 40px;
+    background: #ffffff;
+}
+
+.prop-types-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border, #e5e7eb);
+}
+
+.prop-type-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    border-radius: 50px;
+    background: var(--color-bg-light, #f8fafc);
+    border: 1px solid var(--color-border, #e2e8f0);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-dark-green, #1f3c07);
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.prop-type-tab:hover,
+.prop-type-tab.active {
+    background: var(--color-orange, #fd6f00);
+    color: #ffffff;
+    border-color: var(--color-orange, #fd6f00);
+    box-shadow: 0 4px 14px rgba(253, 111, 0, 0.2);
+}
+
+.rent-market-header-card {
+    background: linear-gradient(135deg, #1f3c07 0%, #2e590b 100%);
+    border-radius: 20px;
+    padding: 36px 40px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.rent-market-header-card::after {
+    content: "";
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(253,111,0,0.2) 0%, rgba(0,0,0,0) 70%);
+    pointer-events: none;
+}
+
+.rent-market-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.rent-market-title-wrap h1,
+.rent-market-title-wrap h2 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0 0 8px 0;
+}
+
+.rent-results-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(253, 111, 0, 0.25);
+    border: 1px solid rgba(253, 111, 0, 0.5);
+    color: #ff9a3c;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.rent-market-ctas {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-glass-cta {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.btn-glass-cta:hover {
+    background: #ffffff;
+    color: var(--color-dark-green, #1f3c07);
+}
+
+.rent-search-tools-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+    .rent-search-tools-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.search-box-form {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 50px;
+    padding: 4px 6px 4px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.search-box-form input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 10px 0;
+    font-size: 15px;
+    outline: none;
+    color: #1e293b;
+}
+
+.search-box-form button {
+    background: var(--color-orange, #fd6f00);
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.25s ease;
+}
+
+.search-box-form button:hover {
+    background: #e06200;
+}
+
+.market-summary-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+    padding: 20px 24px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.market-summary-card strong {
+    color: #ffffff;
+}
+
 
