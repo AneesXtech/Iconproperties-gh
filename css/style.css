@@ -793,9 +793,16 @@ section {
 
 .services-3card-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
     align-items: stretch;
+}
+
+@media (max-width: 1199px) {
+    .services-3card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+    }
 }
 
 .service-arch-card {
@@ -4975,5 +4982,167 @@ section#office-map-section .text-center.mb-48 {
         align-items: flex-start;
         gap: 14px;
         padding: 20px;
+    }
+}
+
+/* ==========================================================================
+   WE MANAGE LANDLORD PAGE STYLING (6-Card Grid, Proposal Form, Guarantees)
+   ========================================================================== */
+
+/* Management Capabilities 3-Column Grid */
+.wm-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    align-items: stretch;
+}
+
+.wm-service-card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    padding: 36px 30px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.wm-service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.09);
+    border-color: var(--color-orange);
+}
+
+.wm-service-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    background: rgba(253, 111, 0, 0.08);
+    color: var(--color-orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    transition: all 0.3s ease;
+}
+
+.wm-service-card:hover .wm-service-icon {
+    background: var(--color-orange);
+    color: var(--color-white);
+    transform: scale(1.08);
+}
+
+.wm-service-title {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-dark-green);
+    margin-bottom: 12px;
+    line-height: 1.35;
+}
+
+.wm-service-desc {
+    font-family: var(--font-body);
+    font-size: 14.5px;
+    color: var(--color-text-muted);
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* Proposal Form Container Card */
+.form-container-card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 24px;
+    padding: 48px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.form-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-dark-green);
+    margin-bottom: 8px;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: #171717;
+    background-color: #ffffff;
+    transition: all 0.25s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--color-orange);
+    box-shadow: 0 0 0 3px rgba(253, 111, 0, 0.15);
+}
+
+select.form-input {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%231f3c07' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 18px center;
+    background-size: 16px;
+    padding-right: 44px;
+    cursor: pointer;
+}
+
+.btn-lg {
+    padding: 16px 36px;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+.eyebrow-orange {
+    color: var(--color-orange) !important;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+    .wm-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .wm-services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .form-container-card {
+        padding: 28px 20px;
+    }
+
+    .form-grid-2 {
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 }
