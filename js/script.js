@@ -86,8 +86,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // so sections visible on page load are never blank.
         allSections.forEach(section => {
             // Skip the hero/banner — it's always above the fold
-            const skipIds = ['hero', 'about-hero', 'ws-hero', 'wr-hero', 'wb-hero', 'contact-hero', 'we-sell-hero', 'we-rent-hero', 'we-build-hero', 'we-manage-hero', 'listings-hero'];
-            const skip = skipIds.includes(section.id) || section.classList.contains('hero-section') || section.classList.contains('about-hero-banner');
+            const skipIds = ['hero', 'about-hero', 'ws-hero', 'wr-hero', 'wb-hero', 'contact-hero'];
+            const skip = skipIds.includes(section.id) || section.classList.contains('hero-section');
             if (!skip) {
                 section.classList.add('section-hidden');
             }
@@ -588,25 +588,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         });
-    // ==========================================================================
-    // 12. Neighborhood Directory Search Filter Engine
-    // ==========================================================================
-    const locationInput = document.getElementById('location-search-input');
-    const locationChips = document.querySelectorAll('.neighborhoods-grid .location-chip');
-
-    if (locationInput && locationChips.length > 0) {
-        locationInput.addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase().trim();
-            locationChips.forEach(chip => {
-                const text = chip.textContent.toLowerCase();
-                if (text.includes(query)) {
-                    chip.style.display = 'flex';
-                } else {
-                    chip.style.display = 'none';
-                }
-            });
-        });
     }
 
 });
-

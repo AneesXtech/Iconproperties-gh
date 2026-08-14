@@ -97,8 +97,8 @@
     <!-- MAIN CONTENT -->
     <main id="main-content">
 
-        <!-- 2. HERO SECTION -->
-        <section class="about-hero-banner" id="listings-hero">
+        <!-- 2. HERO SECTION (Identical to we-rent.html compact hero with background overlay) -->
+        <section class="about-hero-section" id="listings-hero">
             <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1920&q=85"
                 alt="Properties and Real Estate Portfolio in Ghana" class="about-hero-bg-img">
             <div class="about-hero-overlay"></div>
@@ -118,12 +118,12 @@
             </div>
         </section>
 
-        <!-- 3. PROPERTIES SECTION WITH EXACT 5 TABS -->
+        <!-- 3. PROPERTIES SECTION WITH EXACT 3 TABS -->
         <section class="ws-listings-section" id="listings-section" style="padding: 60px 0 100px 0;">
             <div class="container">
 
-                <!-- Filter Tabs: All, For Sale, For Rent, Accra, Sekondi-Takoradi -->
-                <div class="listings-tabs-wrapper mb-40 text-center flex-center" style="gap: 12px; flex-wrap: wrap;">
+                <!-- Filter Tabs: All, For Sale, For Rent -->
+                <div class="listings-tabs-wrapper mb-40 text-center">
                     <button class="listing-tab-btn active" data-filter="all">
                         <span>All Properties</span>
                     </button>
@@ -133,21 +133,15 @@
                     <button class="listing-tab-btn" data-filter="for-rent">
                         <span>For Rent</span>
                     </button>
-                    <button class="listing-tab-btn" data-filter="accra">
-                        <span>Accra</span>
-                    </button>
-                    <button class="listing-tab-btn" data-filter="takoradi">
-                        <span>Sekondi-Takoradi</span>
-                    </button>
                 </div>
 
-                <!-- Property Grid Layout -->
+                <!-- Property Grid Layout (Identical to we-rent.html ws-property-grid) -->
                 <div class="ws-property-grid listings-grid-container">
 
-                    <!-- CARD 01 — Labone 4-Bed Apartment [FOR SALE - ACCRA] -->
-                    <article class="ws-prop-card" data-category="for-sale accra" aria-label="Property listing">
+                    <!-- CARD 01 — Labone 4-Bed Apartment [FOR SALE] -->
+                    <article class="ws-prop-card" data-category="for-sale" aria-label="Property listing">
                         <div class="ws-prop-img-wrap">
-                            <img src="images/prop-labone-apt.jpg" alt="4-Bed Labone Apartment Accra" class="ws-prop-img" loading="lazy">
+                            <img src="images/prop-labone-apt.jpg" alt="4-Bed Labone Apartment" class="ws-prop-img" loading="lazy">
                             <span class="ws-prop-badge">FOR SALE</span>
                         </div>
                         <div class="ws-prop-body">
@@ -191,55 +185,10 @@
                         </div>
                     </article>
 
-                    <!-- CARD 02 — Anaji Executive 4-Bed Villa [FOR SALE - TAKORADI] -->
-                    <article class="ws-prop-card" data-category="for-sale takoradi" aria-label="Property listing">
+                    <!-- CARD 02 — East Legon 1-Bed Apartment [FOR RENT] -->
+                    <article class="ws-prop-card" data-category="for-rent" aria-label="Property listing">
                         <div class="ws-prop-img-wrap">
-                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Anaji Executive Villa Takoradi" class="ws-prop-img" loading="lazy">
-                            <span class="ws-prop-badge">FOR SALE</span>
-                        </div>
-                        <div class="ws-prop-body">
-                            <h3 class="ws-prop-title">Anaji Executive 4-Bed Villa</h3>
-                            <p class="ws-prop-location">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                    <circle cx="12" cy="10" r="3"></circle>
-                                </svg>
-                                West Anaji, Takoradi W/R
-                            </p>
-                            <p class="ws-prop-type">Gated Residence — Private Garden & Carport</p>
-                            <div class="ws-prop-specs">
-                                <span class="ws-spec-item">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                                    </svg>
-                                    4 Beds
-                                </span>
-                                <span class="ws-spec-item">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <path d="M5 12H19M5 12a2 2 0 0 1-2-2V6h18v4a2 2 0 0 1-2 2M5 12v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"></path>
-                                    </svg>
-                                    4 Baths
-                                </span>
-                            </div>
-                            <div class="ws-prop-footer">
-                                <span class="ws-prop-price">GH₵ 3,850,000</span>
-                                <a href="we-sell.html#ws-seller-form" class="btn btn-primary ws-prop-cta">
-                                    <span>Enquire Now</span>
-                                    <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- CARD 03 — East Legon 1-Bed Apartment [FOR RENT - ACCRA] -->
-                    <article class="ws-prop-card" data-category="for-rent accra" aria-label="Property listing">
-                        <div class="ws-prop-img-wrap">
-                            <img src="images/prop-rent-1bed.jpg" alt="Furnished 1-Bed Apartment Accra" class="ws-prop-img" loading="lazy">
+                            <img src="images/prop-rent-1bed.jpg" alt="Furnished 1-Bed Apartment" class="ws-prop-img" loading="lazy">
                             <span class="ws-prop-badge badge-hot">FOR RENT</span>
                         </div>
                         <div class="ws-prop-body">
@@ -283,143 +232,10 @@
                         </div>
                     </article>
 
-                    <!-- CARD 04 — Airport Ridge Coastal Villa [FOR RENT - TAKORADI] -->
-                    <article class="ws-prop-card" data-category="for-rent takoradi" aria-label="Property listing">
+                    <!-- CARD 03 — Oyarifa 2-Bed Apartment [FOR RENT] -->
+                    <article class="ws-prop-card" data-category="for-rent" aria-label="Property listing">
                         <div class="ws-prop-img-wrap">
-                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Airport Ridge Takoradi Residence" class="ws-prop-img" loading="lazy">
-                            <span class="ws-prop-badge badge-hot">FOR RENT</span>
-                        </div>
-                        <div class="ws-prop-body">
-                            <h3 class="ws-prop-title">Airport Ridge Coastal Villa</h3>
-                            <p class="ws-prop-location">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                    <circle cx="12" cy="10" r="3"></circle>
-                                </svg>
-                                Airport Ridge, Takoradi W/R
-                            </p>
-                            <p class="ws-prop-type">Coastal Villa — Ocean Breeze Terrace</p>
-                            <div class="ws-prop-specs">
-                                <span class="ws-spec-item">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                                    </svg>
-                                    3 Beds
-                                </span>
-                                <span class="ws-spec-item">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <path d="M5 12H19M5 12a2 2 0 0 1-2-2V6h18v4a2 2 0 0 1-2 2M5 12v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"></path>
-                                    </svg>
-                                    3 Baths
-                                </span>
-                            </div>
-                            <div class="ws-prop-footer">
-                                <span class="ws-prop-price">GH₵ 12,000 / Mo</span>
-                                <a href="we-rent.html#wr-requirements" class="btn btn-primary ws-prop-cta">
-                                    <span>Enquire Now</span>
-                                    <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- CARD 05 — Cantonments Diplomatic Villa [FOR SALE - ACCRA] -->
-                    <article class="ws-prop-card" data-category="for-sale accra" aria-label="Property listing">
-                        <div class="ws-prop-img-wrap">
-                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Cantonments Luxury Villa Accra" class="ws-prop-img" loading="lazy">
-                            <span class="ws-prop-badge">FOR SALE</span>
-                        </div>
-                        <div class="ws-prop-body">
-                            <h3 class="ws-prop-title">Cantonments Diplomatic Villa</h3>
-                            <p class="ws-prop-location">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                    <circle cx="12" cy="10" r="3"></circle>
-                                </svg>
-                                Cantonments, Accra
-                            </p>
-                            <p class="ws-prop-type">Prime Diplomatic Residence — Swimming Pool</p>
-                            <div class="ws-prop-specs">
-                                <span class="ws-spec-item">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                                    </svg>
-                                    5 Beds
-                                </span>
-                                <span class="ws-spec-item">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <path d="M5 12H19M5 12a2 2 0 0 1-2-2V6h18v4a2 2 0 0 1-2 2M5 12v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"></path>
-                                    </svg>
-                                    6 Baths
-                                </span>
-                            </div>
-                            <div class="ws-prop-footer">
-                                <span class="ws-prop-price">GH₵ 16,500,000</span>
-                                <a href="we-sell.html#ws-seller-form" class="btn btn-primary ws-prop-cta">
-                                    <span>Enquire Now</span>
-                                    <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- CARD 06 — Beach Road Luxury Residence [FOR RENT - TAKORADI] -->
-                    <article class="ws-prop-card" data-category="for-rent takoradi" aria-label="Property listing">
-                        <div class="ws-prop-img-wrap">
-                            <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" alt="Beach Road Apartment Takoradi" class="ws-prop-img" loading="lazy">
-                            <span class="ws-prop-badge badge-hot">FOR RENT</span>
-                        </div>
-                        <div class="ws-prop-body">
-                            <h3 class="ws-prop-title">Beach Road Coastal Residence</h3>
-                            <p class="ws-prop-location">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                    <circle cx="12" cy="10" r="3"></circle>
-                                </svg>
-                                Beach Road, Takoradi W/R
-                            </p>
-                            <p class="ws-prop-type">Executive Apartment — Ocean Views</p>
-                            <div class="ws-prop-specs">
-                                <span class="ws-spec-item">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                                    </svg>
-                                    2 Beds
-                                </span>
-                                <span class="ws-spec-item">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <path d="M5 12H19M5 12a2 2 0 0 1-2-2V6h18v4a2 2 0 0 1-2 2M5 12v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"></path>
-                                    </svg>
-                                    2 Baths
-                                </span>
-                            </div>
-                            <div class="ws-prop-footer">
-                                <span class="ws-prop-price">GH₵ 9,500 / Mo</span>
-                                <a href="we-rent.html#wr-requirements" class="btn btn-primary ws-prop-cta">
-                                    <span>Enquire Now</span>
-                                    <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- CARD 07 — Oyarifa 2-Bed Apartment [FOR RENT - ACCRA] -->
-                    <article class="ws-prop-card" data-category="for-rent accra" aria-label="Property listing">
-                        <div class="ws-prop-img-wrap">
-                            <img src="images/prop-rent-2bed.jpg" alt="Furnished 2-Bed Apartment Accra" class="ws-prop-img" loading="lazy">
+                            <img src="images/prop-rent-2bed.jpg" alt="Furnished 2-Bed Apartment" class="ws-prop-img" loading="lazy">
                             <span class="ws-prop-badge badge-hot">FOR RENT</span>
                         </div>
                         <div class="ws-prop-body">
@@ -463,54 +279,10 @@
                         </div>
                     </article>
 
-                    <!-- CARD 08 — Fijai Heights Family Estate [FOR SALE - TAKORADI] -->
-                    <article class="ws-prop-card" data-category="for-sale takoradi" aria-label="Property listing">
+                    <!-- CARD 04 — East Legon Executive Penthouse [FOR SALE] -->
+                    <article class="ws-prop-card" data-category="for-sale" aria-label="Property listing">
                         <div class="ws-prop-img-wrap">
-                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Fijai Heights Sekondi Estate" class="ws-prop-img" loading="lazy">
-                            <span class="ws-prop-badge">FOR SALE</span>
-                        </div>
-                        <div class="ws-prop-body">
-                            <h3 class="ws-prop-title">Fijai Heights Family Estate</h3>
-                            <p class="ws-prop-location">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                    <circle cx="12" cy="10" r="3"></circle>
-                                </svg>
-                                Fijai Heights, Sekondi-Takoradi W/R
-                            </p>
-                            <p class="ws-prop-type">Spacious Detached Home — Double Garage</p>
-                            <div class="ws-prop-specs">
-                                <span class="ws-spec-item">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                                    </svg>
-                                    5 Beds
-                                </span>
-                                <span class="ws-spec-item">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <path d="M5 12H19M5 12a2 2 0 0 1-2-2V6h18v4a2 2 0 0 1-2 2M5 12v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"></path>
-                                    </svg>
-                                    5 Baths
-                                </span>
-                            </div>
-                            <div class="ws-prop-footer">
-                                <span class="ws-prop-price">GH₵ 5,200,000</span>
-                                <a href="we-sell.html#ws-seller-form" class="btn btn-primary ws-prop-cta">
-                                    <span>Enquire Now</span>
-                                    <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- CARD 09 — East Legon Executive Penthouse [FOR SALE - ACCRA] -->
-                    <article class="ws-prop-card" data-category="for-sale accra" aria-label="Property listing">
-                        <div class="ws-prop-img-wrap">
-                            <img src="images/prop-eastlegon-ph.jpg" alt="East Legon Executive Penthouse Accra" class="ws-prop-img" loading="lazy">
+                            <img src="images/prop-eastlegon-ph.jpg" alt="East Legon Executive Penthouse" class="ws-prop-img" loading="lazy">
                             <span class="ws-prop-badge">FOR SALE</span>
                         </div>
                         <div class="ws-prop-body">
@@ -554,54 +326,10 @@
                         </div>
                     </article>
 
-                    <!-- CARD 10 — Reggies Court Estate Residence [FOR SALE - ACCRA] -->
-                    <article class="ws-prop-card" data-category="for-sale accra" aria-label="Property listing">
+                    <!-- CARD 05 — Trasacco Valley Detached Villa [FOR SALE] -->
+                    <article class="ws-prop-card" data-category="for-sale" aria-label="Property listing">
                         <div class="ws-prop-img-wrap">
-                            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" alt="Reggies Court Amasaman Estate Villa" class="ws-prop-img" loading="lazy">
-                            <span class="ws-prop-badge">FOR SALE</span>
-                        </div>
-                        <div class="ws-prop-body">
-                            <h3 class="ws-prop-title">Reggie's Court Modern Villa</h3>
-                            <p class="ws-prop-location">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                    <circle cx="12" cy="10" r="3"></circle>
-                                </svg>
-                                Amasaman Satellite, Accra
-                            </p>
-                            <p class="ws-prop-type">Gated Estate — Master En-Suite</p>
-                            <div class="ws-prop-specs">
-                                <span class="ws-spec-item">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                                    </svg>
-                                    4 Beds
-                                </span>
-                                <span class="ws-spec-item">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <path d="M5 12H19M5 12a2 2 0 0 1-2-2V6h18v4a2 2 0 0 1-2 2M5 12v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"></path>
-                                    </svg>
-                                    4 Baths
-                                </span>
-                            </div>
-                            <div class="ws-prop-footer">
-                                <span class="ws-prop-price">GH₵ 2,450,000</span>
-                                <a href="we-sell.html#ws-seller-form" class="btn btn-primary ws-prop-cta">
-                                    <span>Enquire Now</span>
-                                    <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- CARD 11 — Trasacco Valley Detached Villa [FOR SALE - ACCRA] -->
-                    <article class="ws-prop-card" data-category="for-sale accra" aria-label="Property listing">
-                        <div class="ws-prop-img-wrap">
-                            <img src="images/prop-trasacco-det.jpg" alt="Trasacco Valley Detached Villa Accra" class="ws-prop-img" loading="lazy">
+                            <img src="images/prop-trasacco-det.jpg" alt="Trasacco Valley Detached Villa" class="ws-prop-img" loading="lazy">
                             <span class="ws-prop-badge">FOR SALE</span>
                         </div>
                         <div class="ws-prop-body">
@@ -645,33 +373,43 @@
                         </div>
                     </article>
 
-                    <!-- CARD 12 — Chapel Hill Commercial Plaza [FOR RENT - TAKORADI] -->
-                    <article class="ws-prop-card" data-category="for-rent takoradi" aria-label="Property listing">
+                    <!-- CARD 06 — Akosombo Waterfront Villa [FOR SALE] -->
+                    <article class="ws-prop-card" data-category="for-sale" aria-label="Property listing">
                         <div class="ws-prop-img-wrap">
-                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Chapel Hill Commercial Space Takoradi" class="ws-prop-img" loading="lazy">
-                            <span class="ws-prop-badge badge-hot">FOR RENT</span>
+                            <img src="images/prop-akosombo-estate.jpg" alt="Akosombo Waterfront Villa" class="ws-prop-img" loading="lazy">
+                            <span class="ws-prop-badge">FOR SALE</span>
                         </div>
                         <div class="ws-prop-body">
-                            <h3 class="ws-prop-title">Chapel Hill Commercial Suite</h3>
+                            <h3 class="ws-prop-title">Akosombo Waterfront Villa</h3>
                             <p class="ws-prop-location">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg>
-                                Chapel Hill, Takoradi W/R
+                                Lake Volta View, Akosombo
                             </p>
-                            <p class="ws-prop-type">Prime Commercial Office Space</p>
+                            <p class="ws-prop-type">Resort Living — Lake View</p>
                             <div class="ws-prop-specs">
                                 <span class="ws-spec-item">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
                                     </svg>
-                                    2,450 sq ft
+                                    4 Beds
+                                </span>
+                                <span class="ws-spec-item">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M5 12H19M5 12a2 2 0 0 1-2-2V6h18v4a2 2 0 0 1-2 2M5 12v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"></path>
+                                    </svg>
+                                    4 Baths
                                 </span>
                             </div>
                             <div class="ws-prop-footer">
-                                <span class="ws-prop-price">GH₵ 18,000 / Mo</span>
-                                <a href="we-rent.html#wr-requirements" class="btn btn-primary ws-prop-cta">
+                                <span class="ws-prop-price">GH₵ 4,500,000</span>
+                                <a href="we-sell.html#ws-seller-form" class="btn btn-primary ws-prop-cta">
                                     <span>Enquire Now</span>
                                     <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                         <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -682,377 +420,6 @@
                         </div>
                     </article>
 
-                </div>
-            </div>
-        </section>
-
-        <!-- ══════════════════════════════════════════════════════════
-             SECTION 04 — POPULAR NEIGHBORHOODS & LOCATIONS DIRECTORY
-        ══════════════════════════════════════════════════════════ -->
-        <section class="neighborhoods-section" id="neighborhoods-directory">
-            <div class="container">
-                <div class="neighborhoods-header text-center reveal-on-scroll">
-                    <span class="section-eyebrow eyebrow-rule">GHANA PROPERTY DIRECTORY</span>
-                    <h2 class="section-title">Explore Properties by Neighborhood.</h2>
-                    <p class="section-description max-w-650">
-                        Search verified homes, townhouses, and lands for sale and rent across prime residential communities in Greater Accra and Takoradi.
-                    </p>
-
-                    <!-- Real-time Location Search Bar -->
-                    <div class="location-search-wrap">
-                        <svg class="location-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                        </svg>
-                        <input type="text" id="location-search-input" class="location-search-input" placeholder="Search neighborhood e.g. East Legon, Cantonments, Spintex...">
-                    </div>
-                </div>
-
-                <!-- 50+ Neighborhood Chips Grid -->
-                <div class="neighborhoods-grid reveal-grid">
-                    <a href="listings.html?location=East-Legon" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            East Legon
-                        </span>
-                        <span class="location-count">1,070</span>
-                    </a>
-                    <a href="listings.html?location=Spintex" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Spintex
-                        </span>
-                        <span class="location-count">525</span>
-                    </a>
-                    <a href="listings.html?location=Tema" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Tema
-                        </span>
-                        <span class="location-count">159</span>
-                    </a>
-                    <a href="listings.html?location=East-Legon-Hills" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            East Legon Hills
-                        </span>
-                        <span class="location-count">140</span>
-                    </a>
-                    <a href="listings.html?location=Adjiringanor" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Adjiringanor
-                        </span>
-                        <span class="location-count">126</span>
-                    </a>
-                    <a href="listings.html?location=Airport-Hills" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Airport Hills
-                        </span>
-                        <span class="location-count">110</span>
-                    </a>
-                    <a href="listings.html?location=East-Airport" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            East Airport
-                        </span>
-                        <span class="location-count">105</span>
-                    </a>
-                    <a href="listings.html?location=Ashaley-Botwe" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Ashaley Botwe
-                        </span>
-                        <span class="location-count">104</span>
-                    </a>
-                    <a href="listings.html?location=Oyarifa-Rd" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Oyarifa Rd
-                        </span>
-                        <span class="location-count">101</span>
-                    </a>
-                    <a href="listings.html?location=Achimota" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Achimota
-                        </span>
-                        <span class="location-count">95</span>
-                    </a>
-                    <a href="listings.html?location=Kwabenya" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Kwabenya
-                        </span>
-                        <span class="location-count">95</span>
-                    </a>
-                    <a href="listings.html?location=Community-25" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Community 25
-                        </span>
-                        <span class="location-count">83</span>
-                    </a>
-                    <a href="listings.html?location=Cantonments" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Cantonments
-                        </span>
-                        <span class="location-count">81</span>
-                    </a>
-                    <a href="listings.html?location=Adenta" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Adenta
-                        </span>
-                        <span class="location-count">80</span>
-                    </a>
-                    <a href="listings.html?location=Ashongman" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Ashongman
-                        </span>
-                        <span class="location-count">69</span>
-                    </a>
-                    <a href="listings.html?location=Haatso" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Haatso
-                        </span>
-                        <span class="location-count">64</span>
-                    </a>
-                    <a href="listings.html?location=West-Legon" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            West Legon
-                        </span>
-                        <span class="location-count">61</span>
-                    </a>
-                    <a href="listings.html?location=Accra" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Accra Central
-                        </span>
-                        <span class="location-count">60</span>
-                    </a>
-                    <a href="listings.html?location=Airport-Area" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Airport Area
-                        </span>
-                        <span class="location-count">60</span>
-                    </a>
-                    <a href="listings.html?location=North-Legon" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            North Legon
-                        </span>
-                        <span class="location-count">58</span>
-                    </a>
-                    <a href="listings.html?location=Sakumono" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Sakumono
-                        </span>
-                        <span class="location-count">55</span>
-                    </a>
-                    <a href="listings.html?location=Dzorwulu" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Dzorwulu
-                        </span>
-                        <span class="location-count">52</span>
-                    </a>
-                    <a href="listings.html?location=Trasacco" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Trasacco Valley
-                        </span>
-                        <span class="location-count">47</span>
-                    </a>
-                    <a href="listings.html?location=Lakeside-Estate" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Lakeside Estate
-                        </span>
-                        <span class="location-count">47</span>
-                    </a>
-                    <a href="listings.html?location=Labone" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Labone
-                        </span>
-                        <span class="location-count">42</span>
-                    </a>
-                    <a href="listings.html?location=Abokobi" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Abokobi
-                        </span>
-                        <span class="location-count">41</span>
-                    </a>
-                    <a href="listings.html?location=Prampram" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Prampram
-                        </span>
-                        <span class="location-count">36</span>
-                    </a>
-                    <a href="listings.html?location=Oyibi" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Oyibi
-                        </span>
-                        <span class="location-count">34</span>
-                    </a>
-                    <a href="listings.html?location=Dansoman" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Dansoman
-                        </span>
-                        <span class="location-count">32</span>
-                    </a>
-                    <a href="listings.html?location=Dome" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Dome
-                        </span>
-                        <span class="location-count">31</span>
-                    </a>
-                    <a href="listings.html?location=Pokuase" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Pokuase
-                        </span>
-                        <span class="location-count">30</span>
-                    </a>
-                    <a href="listings.html?location=Weija" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Weija
-                        </span>
-                        <span class="location-count">28</span>
-                    </a>
-                    <a href="listings.html?location=Roman-Ridge" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Roman Ridge
-                        </span>
-                        <span class="location-count">28</span>
-                    </a>
-                    <a href="listings.html?location=Teshie" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Teshie
-                        </span>
-                        <span class="location-count">28</span>
-                    </a>
-                    <a href="listings.html?location=Abelemkpe" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Abelemkpe
-                        </span>
-                        <span class="location-count">25</span>
-                    </a>
-                    <a href="listings.html?location=Tesano" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Tesano
-                        </span>
-                        <span class="location-count">22</span>
-                    </a>
-                    <a href="listings.html?location=West-Trasacco" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            West Trasacco
-                        </span>
-                        <span class="location-count">16</span>
-                    </a>
-                    <a href="listings.html?location=Amasaman" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Amasaman
-                        </span>
-                        <span class="location-count">16</span>
-                    </a>
-                    <a href="listings.html?location=Nungua" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Nungua
-                        </span>
-                        <span class="location-count">16</span>
-                    </a>
-                    <a href="listings.html?location=Ridge" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Ridge
-                        </span>
-                        <span class="location-count">16</span>
-                    </a>
-                    <a href="listings.html?location=Osu" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Osu
-                        </span>
-                        <span class="location-count">15</span>
-                    </a>
-                    <a href="listings.html?location=McCarthy-Hill" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            McCarthy Hill
-                        </span>
-                        <span class="location-count">15</span>
-                    </a>
-                    <a href="listings.html?location=Oyarifa" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Oyarifa
-                        </span>
-                        <span class="location-count">15</span>
-                    </a>
-                    <a href="listings.html?location=Labadi" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Labadi
-                        </span>
-                        <span class="location-count">14</span>
-                    </a>
-                    <a href="listings.html?location=North-Ridge" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            North Ridge
-                        </span>
-                        <span class="location-count">13</span>
-                    </a>
-                    <a href="listings.html?location=Taifa" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Taifa
-                        </span>
-                        <span class="location-count">13</span>
-                    </a>
-                    <a href="listings.html?location=Community-18" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Community 18
-                        </span>
-                        <span class="location-count">12</span>
-                    </a>
-                    <a href="listings.html?location=New-Legon" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            New Legon
-                        </span>
-                        <span class="location-count">12</span>
-                    </a>
-                    <a href="listings.html?location=Tantra" class="location-chip">
-                        <span class="location-name">
-                            <svg class="location-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            Tantra
-                        </span>
-                        <span class="location-count">11</span>
-                    </a>
                 </div>
             </div>
         </section>
