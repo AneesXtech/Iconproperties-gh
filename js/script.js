@@ -86,8 +86,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // so sections visible on page load are never blank.
         allSections.forEach(section => {
             // Skip the hero/banner — it's always above the fold
-            const skipIds = ['hero', 'about-hero', 'ws-hero', 'wr-hero', 'wb-hero', 'contact-hero'];
-            const skip = skipIds.includes(section.id) || section.classList.contains('hero-section');
+            const skipIds = ['hero', 'about-hero', 'ws-hero', 'wr-hero', 'wb-hero', 'contact-hero', 'we-sell-hero', 'we-rent-hero', 'we-build-hero', 'we-manage-hero', 'listings-hero'];
+            const skip = skipIds.includes(section.id) || section.classList.contains('hero-section') || section.classList.contains('about-hero-banner');
             if (!skip) {
                 section.classList.add('section-hidden');
             }
