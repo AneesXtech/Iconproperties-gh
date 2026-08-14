@@ -23,6 +23,7 @@
 - [ ] Add JSON-LD schema to `index.html` (`Organization`, `WebSite`, `LocalBusiness`, `RealEstateAgent`).
 - [ ] Add JSON-LD schema to `about.html` and `contact.html` (`LocalBusiness`, `AboutPage`, `ContactPage`, `BreadcrumbList`).
 - [ ] Add JSON-LD schema to `we-build.html`, `we-sell.html`, `we-rent.html` (`Service`, `RealEstateAgent`, `BreadcrumbList`).
+- [ ] Explicitly map **Property Management** service schema (`PropertyManagement`, tenant management, rent collection, asset oversight).
 
 ### Phase 12: Form Security, Anti-Spam & Honeypot System
 - [ ] Embed hidden honeypot fields (`name="website_hp"`) in `inquiry-form`, `ws-enquiry-form`, and `wr-requirements-form`.

@@ -1,9 +1,13 @@
 # Product Requirement Document (PRD) - ICON Estate & Property Managers
 
 ## 1. Executive Summary & Vision
-**ICON Estate & Property Managers** is a premier African real estate company based in Ghana (`https://IconpropertiesGh.com/`). The platform serves clients across three primary pillars: **We Build** (Property Development), **We Sell** (Brokerage & Property Sales), and **We Rent** (Residential & Commercial Leasing).
+**ICON Estate & Property Managers** is Ghana's premier real estate property manager and developer (`https://IconpropertiesGh.com/`). The platform serves clients across four core operational pillars:
+1. **Property Management (Management of Properties):** Comprehensive end-to-end management for landlords and property owners, including tenant screening, rent collection, lease administration, routine maintenance, facility management, and financial reporting across Ghana.
+2. **We Build (Property Development):** Full-cycle architectural design, civil engineering, construction, and estate development.
+3. **We Sell (Brokerage & Sales):** Residential, commercial, and land sales representation across Ghana.
+4. **We Rent (Leasing & Rentals):** Executive home rentals, luxury apartments, and commercial property leasing.
 
-This document specifies both functional requirements and production hardening standards covering **SEO Optimization, Security Hardening, Anti-Spam Protections, Privacy Compliance, and Deployment Readiness**.
+This document specifies functional requirements, service coverage, and production hardening standards covering **SEO Optimization, Security Hardening, Anti-Spam Protections, Privacy Compliance, and Deployment Readiness**.
 
 ---
 
@@ -11,12 +15,12 @@ This document specifies both functional requirements and production hardening st
 
 | Page | File | Search Intent & Focus Keywords | Robots Directive |
 |---|---|---|---|
-| **Home** | `index.html` | Real estate Ghana, properties in Ghana, property company Ghana | `index, follow` |
+| **Home** | `index.html` | Real estate Ghana, property managers Ghana, property management Ghana | `index, follow` |
 | **We Build** | `we-build.html` | Property development Ghana, house construction, building projects Ghana | `index, follow` |
 | **We Sell** | `we-sell.html` | Properties for sale Ghana, houses for sale Ghana, real estate for sale | `index, follow` |
 | **We Rent** | `we-rent.html` | Properties for rent Ghana, houses for rent, apartments for rent Ghana | `index, follow` |
-| **About Us** | `about.html` | ICON Properties Ghana, real estate company Ghana, property experts | `index, follow` |
-| **Contact Us** | `contact.html` | Contact ICON Properties Ghana, real estate consultation Ghana | `index, follow` |
+| **About Us / Services** | `about.html` | ICON Properties Ghana, property managers Ghana, property management services | `index, follow` |
+| **Contact Us** | `contact.html` | Contact ICON Properties Ghana, property management consultation Ghana | `index, follow` |
 | **Privacy Policy** | `privacy-policy.html` | ICON Properties Ghana privacy policy, data protection Ghana | `index, follow` |
 | **Terms & Conditions** | `terms-and-conditions.html` | ICON Properties Ghana terms of service, real estate terms | `index, follow` |
 | **Thank You** | `thank-you.html` | Inquiry confirmation | `noindex, follow` |
