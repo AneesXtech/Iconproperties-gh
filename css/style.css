@@ -5145,4 +5145,110 @@ select.form-input {
         grid-template-columns: 1fr;
         gap: 0;
     }
-}
+}
+
+/* ==========================================================================
+   NEIGHBORHOODS & LOCATIONS DIRECTORY WIDGET
+   ========================================================================== */
+.neighborhoods-section {
+    padding: 80px 0;
+    background-color: var(--color-bg-light, #f9fafb);
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.neighborhoods-header {
+    margin-bottom: 40px;
+}
+
+.location-search-wrap {
+    max-width: 480px;
+    margin: 24px auto 0;
+    position: relative;
+}
+
+.location-search-input {
+    width: 100%;
+    padding: 14px 20px 14px 48px;
+    border-radius: 50px;
+    border: 1px solid var(--color-border, #e2e8f0);
+    font-size: 15px;
+    background: #ffffff;
+    outline: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: all 0.25s ease;
+}
+
+.location-search-input:focus {
+    border-color: var(--color-orange, #fd6f00);
+    box-shadow: 0 0 0 3px rgba(253, 111, 0, 0.15);
+}
+
+.location-search-icon {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+}
+
+.neighborhoods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 14px;
+}
+
+.location-chip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    border-radius: 14px;
+    background: #ffffff;
+    border: 1px solid var(--color-border, #e2e8f0);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-dark-green, #1f3c07);
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+
+.location-chip:hover {
+    transform: translateY(-3px);
+    border-color: var(--color-orange, #fd6f00);
+    color: var(--color-orange, #fd6f00);
+    box-shadow: 0 8px 20px rgba(253, 111, 0, 0.12);
+}
+
+.location-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.location-pin-icon {
+    width: 14px;
+    height: 14px;
+    color: var(--color-orange, #fd6f00);
+    flex-shrink: 0;
+}
+
+.location-count {
+    background: rgba(253, 111, 0, 0.08);
+    color: var(--color-orange, #fd6f00);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.location-chip:hover .location-count {
+    background: var(--color-orange, #fd6f00);
+    color: #ffffff;
+}
+

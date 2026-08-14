@@ -588,6 +588,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         });
+    // ==========================================================================
+    // 12. Neighborhood Directory Search Filter Engine
+    // ==========================================================================
+    const locationInput = document.getElementById('location-search-input');
+    const locationChips = document.querySelectorAll('.neighborhoods-grid .location-chip');
+
+    if (locationInput && locationChips.length > 0) {
+        locationInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            locationChips.forEach(chip => {
+                const text = chip.textContent.toLowerCase();
+                if (text.includes(query)) {
+                    chip.style.display = 'flex';
+                } else {
+                    chip.style.display = 'none';
+                }
+            });
+        });
     }
 
 });
+
