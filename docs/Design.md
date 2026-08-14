@@ -44,10 +44,3 @@
 3. **Success State:** Form status alerts (`form-status-alert success`) display green borders and text on light green background (`#ecfdf5`).
 4. **Honeypot Hidden Element:** Honeypot anti-spam fields use `display: none !important; opacity: 0; position: absolute; left: -9999px;` so they are completely hidden from human visitors but capturable by spam bots.
 5. **No Visual Shift Security Alerts:** Form alerts use smooth opacity transitions and pre-reserved container space to prevent page layout jumps during validation.
-
----
-
-## 3. Property Management Component & Card Design Tokens
-1. **Tagline Display:** `"Ghana's Number one Real estate property managers And Developers!"` MUST be prominently displayed across page headers, hero banners, and footer brand columns.
-2. **Property Management Cards:** Styled with dark green accent borders (`--color-dark-green`), translucent glassmorphic badge overlays (`background: rgba(253, 111, 0, 0.1)`), and orange action triggers for landlord inquiries.
-3. **Service Badges:** Badges for Property Management feature dedicated icons (`svg` building/shield icons) to emphasize professional asset protection and property oversight.

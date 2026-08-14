@@ -5,12 +5,6 @@ The platform operates as a static, high-performance web application utilizing **
 
 Domain: `https://IconpropertiesGh.com/`
 
-The architecture supports four core real-estate domains:
-1. **Property Management (Management of Properties):** Landlord asset management, facility maintenance tracking, tenant portal routing, and rental yield optimization across Takoradi, Accra, and satellite locations in Ghana.
-2. **We Build (Property Development):** Architectural projects, estate construction, civil engineering portfolio.
-3. **We Sell (Brokerage & Sales):** Property sales, residential villas, land acquisitions.
-4. **We Rent (Leasing & Management):** Long-term and short-term luxury rentals.
-
 ---
 
 ## 2. SEO & Metadata Engine
@@ -20,7 +14,7 @@ Each page includes a standardized, fully responsive `<head>` architecture:
 - **Indexing directive:** `<meta name="robots" content="index, follow">` (or `noindex, follow` for utility pages)
 - **Open Graph:** `og:title`, `og:description`, `og:type`, `og:url`, `og:image`, `og:site_name`, `og:locale`
 - **Twitter Cards:** `twitter:card` (`summary_large_image`), `twitter:title`, `twitter:description`, `twitter:image`
-- **JSON-LD Structured Data:** Inline `<script type="application/ld+json">` schemas validating schema.org types (`Organization`, `LocalBusiness`, `RealEstateAgent`, `WebSite`, `BreadcrumbList`). Structured data explicitly lists Property Management services (`PropertyManagement`, `RealEstateAgent`).
+- **JSON-LD Structured Data:** Inline `<script type="application/ld+json">` schemas validating schema.org types (`Organization`, `LocalBusiness`, `RealEstateAgent`, `WebSite`, `BreadcrumbList`).
 
 ---
 

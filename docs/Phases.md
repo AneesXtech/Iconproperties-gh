@@ -23,7 +23,6 @@
 - [ ] Add JSON-LD schema to `index.html` (`Organization`, `WebSite`, `LocalBusiness`, `RealEstateAgent`).
 - [ ] Add JSON-LD schema to `about.html` and `contact.html` (`LocalBusiness`, `AboutPage`, `ContactPage`, `BreadcrumbList`).
 - [ ] Add JSON-LD schema to `we-build.html`, `we-sell.html`, `we-rent.html` (`Service`, `RealEstateAgent`, `BreadcrumbList`).
-- [ ] Explicitly map **Property Management** service schema (`PropertyManagement`, tenant management, rent collection, asset oversight).
 
 ### Phase 12: Form Security, Anti-Spam & Honeypot System
 - [ ] Embed hidden honeypot fields (`name="website_hp"`) in `inquiry-form`, `ws-enquiry-form`, and `wr-requirements-form`.
@@ -49,3 +48,10 @@
 ### Phase 16: Verification & Final Audit Report
 - [ ] Run full audit verification across SEO, Security, Form Anti-Spam, Header configurations, and Accessibility.
 - [ ] Generate comprehensive final verification report.
+
+### Phase 17: Property Management Pillar & `we-manage.html` Integration (Client Priority)
+- [ ] Create dedicated `we-manage.html` ("We Manage") page targeting Landlords & Property Owners.
+- [ ] Add Landlord Property Management feature showcase section on `index.html`.
+- [ ] Add `We Manage` / `Property Management` to Header Nav & Mobile Drawer across all pages.
+- [ ] Add `We Manage` to Footer Column 3 (Services) across all pages.
+- [ ] Add Landlord Inquiry & Management Proposal Form.

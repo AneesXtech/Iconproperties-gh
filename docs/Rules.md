@@ -4,8 +4,7 @@
 1. **Multi-Page Consistency:** The website spans **Home** (`index.html`), **We Build** (`we-build.html`), **We Sell** (`we-sell.html`), **We Rent** (`we-rent.html`), **About Us** (`about.html`), **Contact Us** (`contact.html`), **Privacy Policy** (`privacy-policy.html`), **Terms and Conditions** (`terms-and-conditions.html`), **Thank You** (`thank-you.html`), and **404 Error Page** (`404.html`). All pages must maintain identical design tokens, header/footer navigation, form systems, and animation guidelines.
 2. **Directory Rules:** Maintain all project documentation inside `/docs/` as `.md` files (`PRD.md`, `Architecture.md`, `Rules.md`, `Phases.md`, `Design.md`). Do not create non-markdown formats or `Memory.md` prior to code execution.
 3. **Framework Policy:** Standard Vanilla JavaScript (ES6+), pure CSS3, and HTML5 semantic elements only. No external animation libraries (e.g., GSAP, Framer Motion) or bloated frameworks.
-4. **Property Management Representation Rule:** The tagline *"Ghana's Number one Real estate property managers And Developers!"* MUST be consistently featured across footers, hero banners, and service sections. Property Management (tenant management, rent collection, facility maintenance, and financial reporting) MUST be documented and presented alongside We Build, We Sell, and We Rent.
-5. **Scope Protection (Mandatory):** Do NOT redesign the website layout arbitrarily. Do NOT change visual design, colors, typography, or layout. Do NOT modify smooth physics animations. Focus on Property Management representation, Production SEO, Security, Anti-Spam, Privacy, Technical Hardening, and Deployment Readiness.
+4. **Scope Protection (Mandatory):** Do NOT redesign the website. Do NOT change visual design, colors, typography, or layout. Do NOT modify animations. Focus strictly on Production SEO, Security, Anti-Spam, Privacy, Technical Hardening, and Deployment Readiness.
 
 ---
 
